@@ -1,0 +1,10 @@
+header,section,footer,aside,nav,main,article,figure{display:block}
+body{font-size:100%;cursor:default;margin:0;font-family:"sans-serif";background:#E3C390;color:#9D723F}
+html{scroll-behavior:smooth}
+div{padding:1px}
+footer{text-align:center}
+h1,h2,h3,h4,h5,h6{font-weight:400;line-height:1.15}
+p{line-height:1.1}
+header{background:#CFA46F;box-shadow:0 8px 10px 2px rgba(0,0,0,0.25);padding:1px;font-size:1.25em}
+#preview{}
+/*Font of choice is "Lato"*/

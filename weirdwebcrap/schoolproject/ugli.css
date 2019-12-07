@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/*I SAID GO TO CHINLAND*/
+@import url("..\font\comicsansms\comicsansms.css");
+.a  {
+	font: 3em "Comic Sans MS", "Verdana", "Arial", "sans-serif";
+	color: limeGreen;
+	text-align: center;
+	background: lightGray url("neycreft.png") fixed;
+	background-size: 10em;
+	cursor: none;
+}
+.a:hover  {
+	font: 3em bold;
+	font-family: "Times New Roman", "serif";
+	text-decoration: line-through;
+	text-transform: capitalize;
+	letter-spacing: 0.5em;
+	color: red;
+	text-shadow: 0.25em 0.25em yellow
+}
+.wobox2, wobox2:link, wobox2:visited  {
+	font: 4em "Comic Sans MS", "Verdana", "Arial", "sans-serif";
+	color: red;
+	text-align: center;
+	background: lightGray url("robox.png") fixed repeat;
+	background-size: 10em;
+}
+.wobox2:hover .wobox2:active  {
+	font-size: 8em;
+	color: orange;
+	text-decoration: underline;
+	cursor: not-allowed;
+}
+.linkisChingis, .linkisChingis:link, .linkisChingis:visited  {
+	font: 1.5em "Comic Sans MS", "Verdana", "Arial", "sans-serif";
+	color: DodgerBlue;
+	transition: color .3s ease;
+	border-bottom: solid .1em DodgerBlue
+}
+.linkisChingis:hover, .linkisChingis:active {
+	color: red;
+	transition: color .3s ease;
+	cursor: not-allowed;
+}
+.linkisChin, .linkisChin:link, .linkisChin:visited  {
+	font: 5em "Comic Sans MS", "Verdana", "Arial", "sans-serif";
+	color: DodgerBlue;
+	text-decoration: underline;
+}
+.linkisChin:hover, .linkisChin:active {
+	color: limegreen;
+}
+iframe  {
+	border: 0px none;
+}
+noscript  {
+	font: 8em "Comic Sans MS", "Verdana", "Arial", "sans-serif";
+	color: orange;
+}
+body  {
+	background: purple url("robox.png") repeat-x fixed;
+	background-size: 15em;
+	cursor: wait;
+}
