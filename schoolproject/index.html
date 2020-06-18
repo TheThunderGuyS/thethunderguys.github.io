@@ -81,6 +81,19 @@
     <p>It's very simple and you can copy the code for yourself under the share button of a video (select "embed")</p>
     <pre><code>&lt;iframe width="720" height="480" src="https://www.youtube-nocookie.com/embed/PeP9lD_Kifc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
 
-    <h3 id="4">Thingy #4 - </h3>
+    <h3 id="4">Thingy #4 - I can change HTML elements using JavaScript</h3>
+    <p>JavaScript can be used to change the contents of HTML elements, the style and more.</p>
+    <p id="changedemo">Press the buttons below to change this!</p>
+    <script>var changedemo = document.getElementById("changedemo");</script>
+    <button onclick="changedemo.innerHTML = 'Changed to #1'">Change to #1</button>
+    <button onclick="changedemo.innerHTML = 'Changed to #2'">Change to #2</button>
+    <button onclick="changedemo.innerHTML = 'Press the buttons below to change this!'">Change back</button>
+    <p>We can also use JavaScript to change CSS.</p>
+    <button onclick="changedemo.style.color = 'dodgerBlue'">Change the color to Blue</button>
+    <button onclick="changedemo.style.color = 'limeGreen'">Change the color to Green</button>
+    <button onclick="changedemo.style.color = 'inherit'">Change the color back</button><br>
+    <button onclick="changedemo.style.fontSize = '2.4em'">Make it big</button>
+    <button onclick="changedemo.style.fontSize = '0.8em'">Make it small</button>
+    <p>All this takes advantage of the DOM (Document Object Model). A way for you to access the HTML and CSS through JavaScript, allowing dynamic changes like these. <br>Just like with the audio, I use the script to find the text box and make it a variable. I can then use DOM to access the content of the text box and change it through functions.</p>
 <br><br><br></body>
 </html>
