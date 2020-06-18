@@ -51,7 +51,8 @@ pre {
     font-size: 1.2em;
     font-family: "Cascadia Mono", monospace;
     color: #e60073;
-    overflow-x: auto;
+	overflow-x: auto;
+	width: 95%
 }
 
 .a,.a:link,.a:visited {
@@ -117,7 +118,7 @@ hr {
     }
     #ytvid {
         display: none;
-    }
+	}
 }
 
 /*Darkmode*/

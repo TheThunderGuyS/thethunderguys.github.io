@@ -13,7 +13,8 @@
         <h1>Genius Hour school project that's due tomorrow <em style="font-size:initial;">oh no</em></h1>
         <hr>
     </div>
-    <p>i don't even know what to write here</p>
+    <p>i don't know what to write here</p>
+    <div>
     <h2>Table of Contents:</h2>
     <ol>
         <li><a href="#intro" class="a">Introduction</a>
@@ -27,9 +28,13 @@
                 <li><a href="#2" class="a">Thingy #2</a></li>
                 <li><a href="#3" class="a">Thingy #3</a></li>
                 <li><a href="#4" class="a">Thingy #4</a></li>
+                <li><a href="#5" class="a">Thingy #5</a></li>
             </ol>
         </li>
     </ol>
+    </div>
+
+    <div>
     <h2 class="center" id="intro">Introduction:</h2>
     <p>Since I have nothing better to do or research about during my free time, I made this website in order to demonstrate what I learned in web design. 
     <br>This page is going to be filled with random stuff I learned that I thought was cool.</p>
@@ -41,15 +46,17 @@
     <img src="assets/media/ie8.png" alt="Internet Explorer 8 Screenshot">
     <p>Internet Explorer 5.5, from way back in 2000 renders the page as a complete mess.</p>
     <img src="assets/media/ie5.png" alt="Internet Explorer 5.5 Screenshot">
-    <p>Basically, update your browser if you haven't already.</p>
+    <p>Basically, update your browser if you haven't already. I'm putting this out here because I used to have a teacher who used Internet Explorer and then wondered why some websites were broken.</p>
+    </div>
 
     <h2 id="thingies" class="center">Thingies</h2>
     <p class="center">Random thingies I can show off</p><br>
-    
+
+    <div>
     <h3 id="1">Thingy #1 - I can play music</h3>
-    <p>HTML5 adds a cool feature known as the audio tag, an HTML element that lets you play audio within a website. <br>You can make an audio element have controls (handled by browser) or control it through the magic of JavaScript! (Such as this copy of the DOOM 3 soundtrack) <br>Below is an audio element:</p>
+    <p>HTML5 adds a cool feature known as the audio tag, an HTML element that lets you play audio within a website. <br>You can make an audio element have controls (handled by browser) or control it through the magic of JavaScript! <br>Below is some audio (a copy of the DOOM 3 soundtrack):</p>
     <audio controls id="coolmusic"><source src="assets/media/cooolmusic.mp3" type="audio/mpeg"></audio><br>
-    <script>var coolmusic = document.getElementById("coolmusic");</script>
+    <script>var coolmusic = document.getElementById("coolmusic"); coolmusic.loop = true;</script>
     <p>Thanks to the magic of JavaScript, I made some buttons to play music!</p>
     <button onclick="coolmusic.play();">Play!</button>
     <button onclick="coolmusic.pause();">Pause!</button>
@@ -64,23 +71,30 @@
     <p>These are button tags, which have the "onclick" property that executes our JavaScript functions when clicked.</p>
     <p>(JavaScript)</p>
     <pre><code>var coolmusic = document.getElementById("coolmusic");</code></pre>
-    <p>This line of JavaScript simply finds the music within the document and declares it as a variable under the name "coolmusic". <br>The HTML above then executes the function using the "coolmusic" name followed by a function (play, which plays, pause, which pauses and currentTime, a variable that stores the current location in the song which can be set to another value).</p>
+    <p>This line of JavaScript simply finds the music within the document and declares it as a variable under the name "coolmusic". <br>The HTML above then executes the function using the "coolmusic" name followed by a function (play, which plays and pause, which pauses). The "Requeue to beginning" button accesses a pre-generated variable called currentTime, a variable that stores the current location in the song, which we set to 0 for the beginning (or 43 for cool part).</p>
     <p>Taking advantage of this, you could replace the browser-defult ugly audio player with one you make yourself by removing the controls attribute, although I don't have the time to do this.</p>
+    </div>
 
+    <div>
     <h3 id="2">Thingy #2 - I can play videos</h3>
-    <p>Very similar to the audio above, HTML5 adds video support through the video tag. <br>Just like audio, you can embed it and handle it through JavaScript. <br> Below is a video tag <del>of some strange Team Fortress 2 footage I found on my hard drive</del>:</p>
+    <p>Very similar to the audio above, HTML5 adds video support through the video tag. <br>Just like audio, you can embed it and handle it through JavaScript. <br>Below is a video  <del>of some strange Team Fortress 2 footage I found on my hard drive</del>:</p>
     <video id="e_vid" controls width="1280" height="720" style="max-width: 100%;height: auto;"><source src="assets/media/e.mp4" type="video/mp4"></video><br>
     <script>var e_vid = document.getElementById("e_vid");</script>
     <button onclick="e_vid.play();">Play!</button>
     <button onclick="e_vid.pause();">Pause!</button>
-    <p>This works almost identically to the code behind the audio demo.</p>
+    <button onclick="e_vid.loop = !e_vid.loop">Loop!</button>
+    <p>This works almost identically to the code behind the audio demo, with the only differences being the variable names (these elements behave exactly the same).</p>
+    </div>
 
+    <div>
     <h3 id="3">Thingy #3 - I can play YouTube videos</h3>
     <p>A few years ago, YouTube intorduced a feature that lets you embed their videos directly onto a website, which can be seen on websites everywhere today. <br>I can embed a video of J JRel making Ice Cream (which may turn invisible if your screen is too small):</p>
     <iframe width="720" height="480" style="border: none;" src="https://www.youtube-nocookie.com/embed/PeP9lD_Kifc" allowfullscreen id="ytvid"></iframe>
     <p>It's very simple and you can copy the code for yourself under the share button of a video (select "embed")</p>
-    <pre><code>&lt;iframe width="720" height="480" src="https://www.youtube-nocookie.com/embed/PeP9lD_Kifc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+    <pre><code>&lt;iframe width="720" height="480" style="border: none;" src="https://www.youtube-nocookie.com/embed/PeP9lD_Kifc" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+    </div>
 
+    <div>
     <h3 id="4">Thingy #4 - I can change HTML elements using JavaScript</h3>
     <p>JavaScript can be used to change the contents of HTML elements, the style and more.</p>
     <p id="changedemo">Press the buttons below to change this!</p>
@@ -94,6 +108,23 @@
     <button onclick="changedemo.style.color = 'inherit'">Change the color back</button><br>
     <button onclick="changedemo.style.fontSize = '2.4em'">Make it big</button>
     <button onclick="changedemo.style.fontSize = '0.8em'">Make it small</button>
-    <p>All this takes advantage of the DOM (Document Object Model). A way for you to access the HTML and CSS through JavaScript, allowing dynamic changes like these. <br>Just like with the audio, I use the script to find the text box and make it a variable. I can then use DOM to access the content of the text box and change it through functions.</p>
+    <p>All this takes advantage of the DOM (Document Object Model). A way for you to access the HTML and CSS through JavaScript, allowing dynamic changes like these. <br>Just like with the audio, I use the script to find the text box and make it a variable under the name "changedemo". I can then use DOM to access the content of the text box and change it through functions (innerHTML, a variable containing the text and style.x, a variable containing any given style property which I can edit).</p>
+    <p>(HTML)</p>
+    <pre><code>&lt;button onclick="changedemo.innerHTML = 'Changed to #1'"&gt;Change to #1&lt;/button&gt;
+&lt;button onclick="changedemo.innerHTML = 'Changed to #2. I like cheese.'"&gt;Change to #2&lt;/button&gt;
+&lt;button onclick="changedemo.innerHTML = 'Press the buttons below to change this!'"&gt;Change back&lt;/button&gt;
+&lt;button onclick="changedemo.style.color = 'dodgerBlue'"&gt;Change the color to Blue&lt;/button&gt;
+&lt;button onclick="changedemo.style.color = 'limeGreen'"&gt;Change the color to Green&lt;/button&gt;
+&lt;button onclick="changedemo.style.color = 'inherit'"&gt;Change the color back&lt;/button&gt;
+&lt;button onclick="changedemo.style.fontSize = '2.4em'"&gt;Make it big&lt;/button&gt;
+&lt;button onclick="changedemo.style.fontSize = '0.8em'"&gt;Make it small&lt;/button&gt;</code></pre>
+    <p>(JavaScript)</p>
+    <pre><code>var changedemo = document.getElementById("changedemo");</code></pre>
+    </div>
+
+    <div>
+    <h3 id="5">Thingy #5 - I can create, move and access browser windows</h3>
+    <p>Similar to DOM, there is also BOM (Browser Object Model).</p>
+    </div>
 <br><br><br></body>
 </html>
