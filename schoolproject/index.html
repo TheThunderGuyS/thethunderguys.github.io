@@ -24,6 +24,9 @@
         <li><a href="#thingies" class="a">Thingies</a>
             <ol class="sublist">
                 <li><a href="#1" class="a">Thingy #1</a></li>
+                <li><a href="#2" class="a">Thingy #2</a></li>
+                <li><a href="#3" class="a">Thingy #3</a></li>
+                <li><a href="#4" class="a">Thingy #4</a></li>
             </ol>
         </li>
     </ol>
@@ -42,6 +45,7 @@
 
     <h2 id="thingies" class="center">Thingies</h2>
     <p class="center">Random thingies I can show off</p><br>
+    
     <h3 id="1">Thingy #1 - I can play music</h3>
     <p>HTML5 adds a cool feature known as the audio tag, an HTML element that lets you play audio within a website. <br>You can make an audio element have controls (handled by browser) or control it through the magic of JavaScript! (Such as this copy of the DOOM 3 soundtrack) <br>Below is an audio element:</p>
     <audio controls id="coolmusic"><source src="assets/media/cooolmusic.mp3" type="audio/mpeg"></audio><br>
@@ -61,6 +65,22 @@
     <p>(JavaScript)</p>
     <pre><code>var coolmusic = document.getElementById("coolmusic");</code></pre>
     <p>This line of JavaScript simply finds the music within the document and declares it as a variable under the name "coolmusic". <br>The HTML above then executes the function using the "coolmusic" name followed by a function (play, which plays, pause, which pauses and currentTime, a variable that stores the current location in the song which can be set to another value).</p>
-    <p>Taking advantage of this, you could replace the browser-defult ugly audio player with one you make yourself, although I don't have the time to do this.</p>
+    <p>Taking advantage of this, you could replace the browser-defult ugly audio player with one you make yourself by removing the controls attribute, although I don't have the time to do this.</p>
+
+    <h3 id="2">Thingy #2 - I can play videos</h3>
+    <p>Very similar to the audio above, HTML5 adds video support through the video tag. <br>Just like audio, you can embed it and handle it through JavaScript. <br> Below is a video tag <del>of some strange Team Fortress 2 footage I found on my hard drive</del>:</p>
+    <video id="e_vid" controls width="1280" height="720" style="max-width: 100%;height: auto;"><source src="assets/media/e.mp4" type="video/mp4"></video><br>
+    <script>var e_vid = document.getElementById("e_vid");</script>
+    <button onclick="e_vid.play();">Play!</button>
+    <button onclick="e_vid.pause();">Pause!</button>
+    <p>This works almost identically to the code behind the audio demo.</p>
+
+    <h3 id="3">Thingy #3 - I can play YouTube videos</h3>
+    <p>A few years ago, YouTube intorduced a feature that lets you embed their videos directly onto a website, which can be seen on websites everywhere today. <br>I can embed a video of J JRel making Ice Cream (which may turn invisible if your screen is too small):</p>
+    <iframe width="720" height="480" style="border: none;" src="https://www.youtube-nocookie.com/embed/PeP9lD_Kifc" allowfullscreen id="ytvid"></iframe>
+    <p>It's very simple and you can copy the code for yourself under the share button of a video (select "embed")</p>
+    <pre><code>&lt;iframe width="720" height="480" src="https://www.youtube-nocookie.com/embed/PeP9lD_Kifc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+
+    <h3 id="4">Thingy #4 - </h3>
 <br><br><br></body>
 </html>
