@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>A school project (Genius Hour)</title>
     <meta name="robots" content="noindex, nofollow"> <!--This is a private page, stop Search Engine indexing-->
     <link rel="stylesheet" href="assets/stylesheet.css">
 </head>
-<body class="center">
-    <h1>Genius Hour school project thats due tomorrow <em style="font-size:initial;">oh no</em></h1>
-</body>
+<body>
+    <div class="center">
+        <h1>Genius Hour school project that's due tomorrow <em style="font-size:initial;">oh no</em></h1>
+        <hr>
+    </div>
+    <p>i don't even know what to write here</p>
+    <h2>Table of Contents:</h2>
+    <ol>
+        <li><a href="#intro" class="a">Introduction</a>
+            <ol class="sublist">
+                <li><a href="#compat" class="a">Compatibility Note</a></li>
+            </ol>
+        </li>
+        <li><a href="#thingies" class="a">Thingies</a>
+            <ol class="sublist">
+                <li><a href="#1" class="a">Thingy #1</a></li>
+            </ol>
+        </li>
+    </ol>
+    <h2 class="center" id="intro">Introduction:</h2>
+    <p>Since I have nothing better to do or research about during my free time, I made this website in order to demonstrate what I learned in web design. 
+    <br>This page is going to be filled with random stuff I learned that I thought was cool.</p>
+    <h3 id="compat">Compatibility Note:</h3>
+    <p>This site may not work as intennded on old browsers. I designed it with HTML5 (2015), CSS3 (2015) and ECMAScript 5 (2009) in mind and older browsers may not handle this page well. Some features used didn't exist when these old browsers came around.<br>You can see in the images below how the page begins to break down with older browsers.</p>
+    <p>This is Google Chrome 81, working as intended.</p>
+    <img src="assets/media/chrome.png" alt="Chrome Screenshot">
+    <p>This is Internet Explorer 8, from 2009 doesn't look right as the fonts appear a bit off and are all bold for some reason.</p>
+    <img src="assets/media/ie8.png" alt="Internet Explorer 8 Screenshot">
+    <p>Internet Explorer 5.5, from way back in 2000 renders the page as a complete mess.</p>
+    <img src="assets/media/ie5.png" alt="Internet Explorer 5.5 Screenshot">
+    <p>Basically, update your browser if you haven't already.</p>
+
+    <h2 id="thingies" class="center">Thingies</h2>
+    <p class="center">Random thingies I can show off</p><br>
+    <h3 id="1">Thingy #1 - I can play music</h3>
+    <p>HTML5 adds a cool feature known as the audio tag, an HTML element that lets you play audio within a website. <br>You can make an audio element have controls (handled by browser) or control it through the magic of JavaScript! (Such as this copy of the DOOM 3 soundtrack) <br>Below is an audio element:</p>
+    <audio controls id="coolmusic"><source src="assets/media/cooolmusic.mp3" type="audio/mpeg"></audio><br>
+    <script>var coolmusic = document.getElementById("coolmusic");</script>
+    <p>Thanks to the magic of JavaScript, I made some buttons to play music!</p>
+    <button onclick="coolmusic.play();">Play!</button>
+    <button onclick="coolmusic.pause();">Pause!</button>
+    <button onclick="coolmusic.currentTime = 43; coolmusic.play();">Go to the cool part!</button>
+    <button onclick="coolmusic.pause(); coolmusic.currentTime = 0;">Requeue to beginning!</button>
+    <p>The code behind these buttons looks a little something like this:</p>
+    <p>(HTML)</p>
+    <pre><code>&lt;button onclick="coolmusic.play();"&gt;Play!&lt;/button&gt;
+&lt;button onclick="coolmusic.pause();">Pause!&lt;/button&gt;
+&lt;button onclick="coolmusic.currentTime = 43; coolmusic.play&gt;Go to the cool part!&lt;/button&gt;
+&lt;button onclick="coolmusic.pause(); coolmusic.currentTime = 0;"&gt;Requeue to beginning!&lt;/button&gt;</code></pre>
+    <p>These are button tags, which have the "onclick" property that executes our JavaScript functions when clicked.</p>
+    <p>(JavaScript)</p>
+    <pre><code>var coolmusic = document.getElementById("coolmusic");</code></pre>
+    <p>This line of JavaScript simply finds the music within the document and declares it as a variable under the name "coolmusic". <br>The HTML above then executes the function using the "coolmusic" name followed by a function (play, which plays, pause, which pauses and currentTime, a variable that stores the current location in the song which can be set to another value).</p>
+    <p>Taking advantage of this, you could replace the browser-defult ugly audio player with one you make yourself, although I don't have the time to do this.</p>
+<br><br><br></body>
 </html>

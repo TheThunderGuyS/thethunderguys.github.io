@@ -11,7 +11,8 @@ html {
 ::-webkit-scrollbar{width:10px;height:10px;}::-webkit-scrollbar-track{background:#222;}::-webkit-scrollbar-thumb{background:#ddd;border-radius:4px;}::-webkit-scrollbar-button{width:0;height:0;}
 
 body {
-    margin: 2px;
+    margin-left: 15%;
+    margin-right: 15%;
 	font-family: "LatoLatinWeb", sans-serif;
 	color: #000;
 	background: #f7f7f7;
@@ -19,7 +20,7 @@ body {
 
 .center {
 	margin: auto;
-	width: 98%;
+	width: 70%;
 	text-align: center;
 	padding: 5px;
 }
@@ -33,4 +34,118 @@ h2 {
 h3 {
 	font-size: 1.8em;
 	font-style: normal;
+}
+p,ol {
+	font-size: 1.2em;
+}
+.sublist {
+    font-size: inherit;
+    list-style-type: decimal-leading-zero;
+}
+
+audio {
+    width: 90%;
+}
+
+pre {
+    font-size: 1.2em;
+    font-family: "Cascadia Mono", monospace;
+    color: #e60073;
+    overflow-x: auto;
+}
+
+.a,.a:link,.a:visited {
+	transition: color .25s, border-bottom-color .25s;
+	color: #06c;
+	text-decoration: none;
+	border-bottom: solid .1em transparent;
+    font-style: italic;
+    outline: none;
+}
+.a:hover {
+	color: #0059b3;
+	text-decoration: none;
+	border-bottom-color: #0059b3;
+}
+.a:active {
+	color: #036;
+	text-decoration: none;
+	border-bottom-color: #036;
+}
+button {
+    padding: 4px;
+    margin: 2px;
+    color: #fff;
+    background-color: #4d4d4d;
+    border: 2px #444 solid;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1em;
+    font-family: "LatoLatinWeb", sans-serif;
+    transition: background-color .2s, border-color .2s;
+}
+button:hover {
+    background-color: #333;
+    border-color: #262626;
+}
+button:active {
+    background-color: #1a1a1a;
+    border-color: #000;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding:1px;
+	border: none;
+}
+
+hr {
+	border: 2px solid #000;
+	border-radius: 4px;
+}
+
+/*Mobile devices*/
+@media only screen and (max-width: 800px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .center {
+        width: 90%;
+    }
+}
+
+/*Darkmode*/
+@media only screen and (prefers-color-scheme: dark) {
+	body {
+		background-color: #111;
+		color: #efefef;
+	}
+	hr {
+		border: 2px solid #efefef;
+		border-radius: 4px;
+	}
+	.a,.a:link,.a:visited {
+		color: #66b3ff;
+	}
+	.a:hover {
+		color: #4da6ff;
+		border-bottom-color: #4da6ff;
+	}
+	.a:active {
+		color: #0080ff;
+		border-bottom-color: #0080ff;
+    }
+    pre {
+        color: #ff1a8c;
+    }
+}
+
+/*Reduced Motion*/
+@media only screen and (prefers-reduced-motion: reduce) {
+	a,a:link,a:visited,a:hover,a:active {
+		transition: none;
+    }
 }
