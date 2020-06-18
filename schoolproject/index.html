@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="assets/stylesheet.css">
 </head>
 <body>
-    <div class="center">
-        <h1>Genius Hour school project that's due tomorrow <em style="font-size:initial;">oh no</em></h1>
-        <hr>
-    </div>
+    <h1 class="center">Genius Hour school project that's due tomorrow <em style="font-size:initial;">oh no</em></h1>
+    <hr>
     <p>i don't know what to write here</p>
     <div>
     <h2>Table of Contents:</h2>
@@ -31,6 +29,7 @@
                 <li><a href="#5" class="a">Thingy #5</a></li>
             </ol>
         </li>
+        <li><a href="#conclude" class="a">Conclusion</a></li>
     </ol>
     </div>
 
@@ -120,11 +119,39 @@
 &lt;button onclick="changedemo.style.fontSize = '0.8em'"&gt;Make it small&lt;/button&gt;</code></pre>
     <p>(JavaScript)</p>
     <pre><code>var changedemo = document.getElementById("changedemo");</code></pre>
+    <p>We can show or hide HTML elements too</p>
+    <p id="hide">Press the button below to hide me!</p>
+    <button onclick="document.getElementById('hide').style.display = 'none';">Hide</button><button onclick="document.getElementById('hide').style.display = 'block';">Show</button>
     </div>
 
     <div>
     <h3 id="5">Thingy #5 - I can create, move and access browser windows</h3>
-    <p>Similar to DOM, there is also BOM (Browser Object Model).</p>
+    <p>Similar to DOM, there is also BOM (Browser Object Model). This gives us the Window object which contains ever single thing in our document as well as details about window size and position. <br> The textbox below will display the size of the window viewport (refreshes on reload).</p>
+    <p id="winsize">If you can read this, something went wrong!</p>
+    <script>document.getElementById("winsize").innerHTML = window.innerWidth + " x " + window.innerHeight;</script>
+    <p>This uses a basic script which will find the textbox and set it's innerHTML to be equal to the window dimenstions.</p>
+    <pre><code>document.getElementById("winsize").innerHTML = window.innerWidth + " x " + window.innerHeight;</code></pre>
+    <p>There are other window functions too. These can open new tabs and resize windows.</p>
+    <button onclick="window.open('');">Click this to open a new tab!</button><br>
+    <p>The one below only work properly on computers.</p>
+    <button onclick="window.open('', '', 'width = 640, height = 480');">Click this to open an empty popup!</button>
+    <p>DOM has the ability to read the capibilities of your display.</p>
+    <p id="displayfeat">If you can read this, something went wrong!</p>
+    <script>document.getElementById('displayfeat').innerHTML = 'Screen Width: ' + screen.width + 'px <br>Screen Height: ' + screen.height + 'px <br>Screen Color Depth: ' + screen.colorDepth + 'bit';</script>
+    <pre><code>document.getElementById('displayfeat').innerHTML = 'Screen Width: ' + screen.width + 'px &lt;br&gt;Screen Height: ' + screen.height + 'px &lt;br&gt;Screen Color Depth: ' + screen.colorDepth + 'bit';</code></pre>
+    <p>This long line finds the textbox and sets it's content to have one of the BOM values on each line.</p>
+    <p>BOM is able to read the current URL, and redirect you to other pages.</p>
+    <p id="urls">If you can read this, something went wrong!</p>
+    <script>document.getElementById('urls').innerHTML = 'Current URL path: ' + window.location.href + ' <br>Current document path: ' + window.location.pathname + '<br> Page protocol: ' + window.location.protocol;</script>
+    <p>Just like the Screen code, this finds the textbox and sets its HTML to the BOM values.</p>
+    <p>BOM can access many more things, including browser history (very limited for privacy reasons), creating and reading browser cookies (how every website saves data) and seeing details about the browser that gets sent with every web request.</p>
+    <p id="browser">If you can read this, something went wrong!</p>
+    <script>document.getElementById('browser').innerHTML = 'User agent string (sent by your browser): ' + navigator.userAgent;</script>
+    </div>
+
+    <div>
+    <h2 id="conclude" class="center">Conclusion</h2>
+    <p>That's the end of what I have to show for now. I enjoyed writing this page a lot. If you want to explore more, check out the <a href="https://github.com/TheThunderGuyS/thethunderguys.github.io/tree/master/schoolproject" target="_blank" rel="noopener,noreferrer" class="a">code behind it</a>! (opens in new tab) Click on the file you want to view to see the contents online!</p>
     </div>
 <br><br><br></body>
 </html>
