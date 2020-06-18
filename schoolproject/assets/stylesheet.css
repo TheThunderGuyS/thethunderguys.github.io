@@ -1,0 +1,36 @@
+/*This is a stylesheet*/
+@import url("media/fonts/lato/latolatinfonts.css"); /*Main font*/
+@import url("media/fonts/cascadiacode/cascadiacode.css"); /*Monospace font*/
+
+html {
+	scroll-behavior: smooth;
+	cursor: default;
+	scrollbar-width: thin;
+	scrollbar-color:#ddd #222;
+}
+::-webkit-scrollbar{width:10px;height:10px;}::-webkit-scrollbar-track{background:#222;}::-webkit-scrollbar-thumb{background:#ddd;border-radius:4px;}::-webkit-scrollbar-button{width:0;height:0;}
+
+body {
+    margin: 2px;
+	font-family: "LatoLatinWeb", sans-serif;
+	color: #000;
+	background: #f7f7f7;
+}
+
+.center {
+	margin: auto;
+	width: 98%;
+	text-align: center;
+	padding: 5px;
+}
+
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2.3em;
+}
+h3 {
+	font-size: 1.8em;
+	font-style: normal;
+}
