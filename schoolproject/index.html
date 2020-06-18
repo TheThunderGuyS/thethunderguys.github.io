@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>A school project (Genius Hour)</title>
-    <meta name="robots" content="noindex, nofollow"> <!--This is a private page, stop Search Engine indexing-->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="This is some school project I had to do (Genius Hour).">
     <link rel="stylesheet" href="assets/stylesheet.css">
 </head>
 <body>
@@ -88,7 +89,7 @@
     <div>
     <h3 id="3">Thingy #3 - I can play YouTube videos</h3>
     <p>A few years ago, YouTube intorduced a feature that lets you embed their videos directly onto a website, which can be seen on websites everywhere today. <br>I can embed a video of J JRel making Ice Cream (which may turn invisible if your screen is too small):</p>
-    <button onclick="document.getElementById('ytvid').src = 'https:/\\/www.youtube-nocookie.com/embed/PeP9lD_Kifc'">Press to load video</button><br>
+    <button onclick="document.getElementById('ytvid').src = 'https:/\\/www.youtube-nocookie.com/embed/PeP9lD_Kifc'; this.style.display = 'none'">Press to load video</button><br>
     <iframe width="720" height="480" style="border: none;" src="" allowfullscreen id="ytvid"></iframe>
     <p>It's very simple and you can copy the code for yourself under the share button of a video (select "embed")</p>
     <pre><code>&lt;iframe width="720" height="480" style="border: none;" src="https://www.youtube-nocookie.com/embed/PeP9lD_Kifc" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
