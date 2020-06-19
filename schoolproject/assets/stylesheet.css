@@ -48,11 +48,15 @@ audio {
 }
 
 pre {
+	font-family: "Cascadia Mono", monospace;
     font-size: 1.2em;
-    font-family: "Cascadia Mono", monospace;
     color: #cc0066;
 	overflow-x: auto;
 	width: 95%
+}
+code {
+	font-family: "Cascadia Mono", monospace;
+	font-size: initial;
 }
 
 .a,.a:link,.a:visited {

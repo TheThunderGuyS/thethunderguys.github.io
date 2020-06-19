@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/stylesheet.css">
 </head>
 <body>
-    <h1 class="center">Genius Hour school project that's due tomorrow <em style="font-size:initial;">oh no</em></h1>
+    <h1 class="center">Genius Hour school project that's due <em style="font-size:initial;">oh no</em></h1>
     <hr>
     <p>i don't know what to write here</p>
     <div>
@@ -55,8 +55,8 @@
     <div>
     <h3 id="1">Thingy #1 - I can play music</h3>
     <p>HTML5 adds a cool feature known as the audio tag, an HTML element that lets you play audio within a website. <br>You can make an audio element have controls (handled by browser) or control it through the magic of JavaScript! <br>Below is some audio (a copy of the DOOM 3 soundtrack):</p>
-    <audio controls id="coolmusic"><source src="assets/media/cooolmusic.mp3" type="audio/mpeg"></audio><br>
-    <script>var coolmusic = document.getElementById("coolmusic"); coolmusic.loop = true;</script>
+    <audio controls loop id="coolmusic"><source src="assets/media/cooolmusic.mp3" type="audio/mpeg"></audio><br>
+    <script>var coolmusic = document.getElementById("coolmusic");</script>
     <p>Thanks to the magic of JavaScript, I made some buttons to play music!</p>
     <button onclick="coolmusic.play();">Play!</button>
     <button onclick="coolmusic.pause();">Pause!</button>
